@@ -29785,7 +29785,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Your react app!"), "// add components", /*#__PURE__*/_react.default.createElement(Introduction, null), /*#__PURE__*/_react.default.createElement(DisplayIntro, null), /*#__PURE__*/_react.default.createElement(Blog, null), /*#__PURE__*/_react.default.createElement(DisplayBlog, null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Your react app!"), /*#__PURE__*/_react.default.createElement(Introduction, null), /*#__PURE__*/_react.default.createElement(DisplayIntro, null), /*#__PURE__*/_react.default.createElement(Blog, null), /*#__PURE__*/_react.default.createElement(DisplayBlog, null));
 };
 
 var _default = App;
@@ -29832,7 +29832,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50012" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51471" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
