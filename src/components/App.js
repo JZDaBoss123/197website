@@ -3,10 +3,10 @@ import React from 'react'
 const App = () => (
     <div>
         <h1>Your react app!</h1>
-        <Introduction/>
+        {/* <Introduction/>
         <DisplayIntro/>
         <Blog/>
-        <DisplayBlog/>
+        <DisplayBlog/> */}
     </div>
 )
 export default App

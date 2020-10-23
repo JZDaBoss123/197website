@@ -29785,7 +29785,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Your react app!"), /*#__PURE__*/_react.default.createElement(Introduction, null), /*#__PURE__*/_react.default.createElement(DisplayIntro, null), /*#__PURE__*/_react.default.createElement(Blog, null), /*#__PURE__*/_react.default.createElement(DisplayBlog, null));
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Your react app!"));
 };
 
 var _default = App;
@@ -29801,8 +29801,7 @@ var _App = _interopRequireDefault(require("./src/components/App"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var store = createStore(rootReducer);
-
+// const store = createStore(rootReducer)
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('react-root'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/components/App":"src/components/App.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
