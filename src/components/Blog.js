@@ -12,13 +12,15 @@ const Blog = ({ blogs, dispatchAddPost, dispatchChangePost, dispatchDeletePost }
         title= "" 
         image= "" 
         description= "" 
-        changeInfo={dispatchAddPost}
+        action={dispatchAddPost}
+        //setEditing, id can be missing
     />
       <ul>
         {blogs.map(post =>
         <BlogPosts
             key={post.id}
             {...post}
+            //actions needed
             dispatchChangePost={dispatchChangePost}
             dispatchDeletePost={dispatchDeletePost}
         />

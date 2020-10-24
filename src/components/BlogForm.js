@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const PostsForm = ({ id = null, title, image, description, changeInfo, setEditing = null }) => {
+const PostsForm = ({ id = null, title, image, description, action, setEditing = null }) => {
   const [titleState, setTitle] = useState(title)
   const [imageState, setImage] = useState(image)
   const [descriptionState, setDescription] = useState(description)
@@ -29,11 +29,11 @@ const PostsForm = ({ id = null, title, image, description, changeInfo, setEditin
         />
       </div>
       <button
-        onClick={() => {
+        onClick = {() => {
           if (id !== null) {
-            changeInfo(id, titleState, imageState, descriptionState)
+            action(id, titleState, imageState, descriptionState)
           } else {
-            changeInfo(titleState, imageState, descriptionState)
+            action(titleState, imageState, descriptionState)
           }     
           if (setEditing !== null) {
             setEditing(false)

@@ -21,7 +21,7 @@ const Introduction = ({ intro, dispatchChangeIntro }) => {
                 <div>
                     <h3> {description} </h3>
                 </div>
-                <button onClick={() => setEditing(!editing)}>
+                <button onClick={() => setEditing(true)}>
                     Edit
                 </button>
             </>

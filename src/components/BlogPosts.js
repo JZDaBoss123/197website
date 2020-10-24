@@ -18,7 +18,7 @@ const BlogPosts = ({ id, title, image, description, dispatchChangePost, dispatch
                 <div>
                     <p> {description} </p>
                 </div>
-                <button onClick={() => setEditing(!editing)}>
+                <button onClick={() => setEditing(true)}>
                     Edit Post
                 </button>
             </>
@@ -32,7 +32,7 @@ const BlogPosts = ({ id, title, image, description, dispatchChangePost, dispatch
                     title={title}
                     image={image}
                     description={description}
-                    changeInfo={dispatchChangePost}
+                    action={dispatchChangePost}
                     setEditing={setEditing}
                 />
                 </div>

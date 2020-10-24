@@ -33019,7 +33019,7 @@ var Introduction = function Introduction(_ref) {
       src: image
     })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, " ", description, " ")), /*#__PURE__*/_react.default.createElement("button", {
       onClick: function onClick() {
-        return setEditing(!editing);
+        return setEditing(true);
       }
     }, "Edit"));
   } else {
@@ -33082,7 +33082,7 @@ var PostsForm = function PostsForm(_ref) {
       title = _ref.title,
       image = _ref.image,
       description = _ref.description,
-      changeInfo = _ref.changeInfo,
+      action = _ref.action,
       _ref$setEditing = _ref.setEditing,
       setEditing = _ref$setEditing === void 0 ? null : _ref$setEditing;
 
@@ -33119,9 +33119,9 @@ var PostsForm = function PostsForm(_ref) {
   })), /*#__PURE__*/_react.default.createElement("button", {
     onClick: function onClick() {
       if (id !== null) {
-        changeInfo(id, titleState, imageState, descriptionState);
+        action(id, titleState, imageState, descriptionState);
       } else {
-        changeInfo(titleState, imageState, descriptionState);
+        action(titleState, imageState, descriptionState);
       }
 
       if (setEditing !== null) {
@@ -33187,7 +33187,7 @@ var BlogPosts = function BlogPosts(_ref) {
       src: image
     })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, " ", description, " ")), /*#__PURE__*/_react.default.createElement("button", {
       onClick: function onClick() {
-        return setEditing(!editing);
+        return setEditing(true);
       }
     }, "Edit Post"));
   } else {
@@ -33196,7 +33196,7 @@ var BlogPosts = function BlogPosts(_ref) {
       title: title,
       image: image,
       description: description,
-      changeInfo: dispatchChangePost,
+      action: dispatchChangePost,
       setEditing: setEditing
     })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
       onClick: function onClick() {
@@ -33239,11 +33239,13 @@ var Blog = function Blog(_ref) {
     title: "",
     image: "",
     description: "",
-    changeInfo: dispatchAddPost
+    action: dispatchAddPost //setEditing, id can be missing
+
   }), /*#__PURE__*/_react.default.createElement("ul", null, blogs.map(function (post) {
     return /*#__PURE__*/_react.default.createElement(_BlogPosts.default, _extends({
       key: post.id
     }, post, {
+      //actions needed
       dispatchChangePost: dispatchChangePost,
       dispatchDeletePost: dispatchDeletePost
     }));
@@ -33462,7 +33464,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54378" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58414" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
