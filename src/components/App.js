@@ -1,12 +1,11 @@
 import React from 'react'
+import Introduction from './Introduction'
+import Blog from './Blog'
 
 const App = () => (
     <div>
-        <h1>Your react app!</h1>
-        {/* <Introduction/>
-        <DisplayIntro/>
+        <Introduction/>
         <Blog/>
-        <DisplayBlog/> */}
     </div>
 )
 export default App
